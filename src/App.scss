@@ -1,0 +1,54 @@
+:root {
+  --primary: #fff;
+  --secondary: #ffee00;
+  --background: #212121;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat sans-serif;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+h1.label {
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h1.page-title {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

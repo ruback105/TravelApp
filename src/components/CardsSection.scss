@@ -1,0 +1,42 @@
+.cards-container.container {
+    width: 80%;
+    margin: 75px auto;
+
+    h1.label {
+        overflow-wrap: break-word;
+    }
+
+    .cards-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cards-container.container {
+        width: 90%;
+
+        .cards-items {
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            .card-item {
+                flex-basis: 45%;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .cards-container.container {
+        width: 98%;
+
+        .cards-items .card-item {
+            flex-basis: 22%;
+            margin: 20px;
+        }
+    }
+}

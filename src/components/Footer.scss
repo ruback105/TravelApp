@@ -1,0 +1,105 @@
+.container-footer.container {
+    width: 100%;
+    background-color: var(--background);
+    padding-bottom: 50px;
+
+    .subscribe-info {
+        width: 98%;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        .label {
+            color: var(--primary);
+            text-transform: initial;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.3rem;
+        }
+
+        .note {
+            color: var(--primary);
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .subscribe {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            input,
+            button {
+                width: 70vw;
+                margin: 10px;
+                padding: 10px;
+            }
+
+            input {
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding-left: 20px;
+
+                &::placeholder {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1.title {
+                text-align: center;
+                margin: 10px;
+                color: var(--primary);
+                font-size: 1.6rem;
+            }
+            .links .link {
+                text-align: center;
+                color: var(--primary);
+                font-size: 1.2rem;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-footer.container .subscribe-info .label {
+        font-size: 2rem;
+    }
+    .container-footer.container .subscribe-info .note {
+        font-size: 1.6rem;
+    }
+    .container-footer.container .footer-info {
+        flex-direction: row;
+    }
+    .container-footer.container .footer-info .wrapper {
+        flex-basis: 40%;
+        height: 16vh;
+        margin: 15px 0;
+
+        h1.title {
+            margin-bottom: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-footer.container .footer-info .wrapper {
+        flex-basis: 23%;
+    }
+}
