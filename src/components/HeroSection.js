@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from './Button.js'
-import ReactPlayer from 'react-player'
 import './HeroSection.scss'
 
 function HeroSection() {
