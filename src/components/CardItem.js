@@ -7,7 +7,6 @@ const CardItem = (props) => {
 
   const handleMouseEnter = () => {
     const cardItems = document.querySelectorAll('.card-item')
-    console.log(cardItems)
     const maxHeight = cardItems[0].offsetHeight
     cardItems.forEach((item) =>
       maxHeight > item.height ? maxHeight : item.offsetHeight,

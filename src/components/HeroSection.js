@@ -5,10 +5,7 @@ import './HeroSection.scss'
 function HeroSection() {
   return (
     <section className="hero-container container">
-      <div
-        className="video"
-        style={{ backgroundImage: 'url("/images/background.jpg")' }}
-      >
+      <div className="video">
         <video
           className="video"
           autoPlay
